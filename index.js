@@ -14,7 +14,7 @@ var RNSpinkit = null;
 class Spinkit extends React.Component {
 
 	static propTypes = {
-		type: React.PropTypes.string,
+		type: PropTypes.string,
 		/**
 		 * @prop color
 		 * @NOTE This is typically passed as a string, but technically can also be
@@ -23,10 +23,10 @@ class Spinkit extends React.Component {
 		 *	React Native will throw if passing a string into this component but a
 		 *	different type (number) down to the native module.
 		 */
-		color: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number]),
-		size: React.PropTypes.number,
-		isVisible: React.PropTypes.bool,
-		testID:React.PropTypes.string,
+		color: PropTypes.oneOfType([ PropTypes.string,  PropTypes.number]),
+		size:  PropTypes.number,
+		isVisible:  PropTypes.bool,
+		testID: PropTypes.string,
 		accessibilityComponentType:PropTypes.string,
 		accessibilityLabel:PropTypes.string,
 		accessibilityLiveRegion:PropTypes.string,
