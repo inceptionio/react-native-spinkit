@@ -43,12 +43,12 @@ public class RNSpinkit extends SimpleViewManager<RNSpinkitView> {
         mContext = reactContext;
     }
 
-    @Override
+    //@Override
     public String getName() {
         return "RNSpinkit";
     }
 
-    @Override
+    //@Override
     protected RNSpinkitView createViewInstance(ThemedReactContext reactContext) {
         return new RNSpinkitView(reactContext);
     }
