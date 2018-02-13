@@ -15,17 +15,17 @@ import java.util.List;
  * Created by suzuri04x2 on 2016/5/10.
  */
 public class RNSpinkitPackage implements ReactPackage{
-    @Override
+    //@Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         return Collections.emptyList();
     }
 
-    @Override
+    //@Override
     public List<Class<? extends JavaScriptModule>> createJSModules() {
         return Collections.emptyList();
     }
 
-    @Override
+    //@Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         List<ViewManager> list = new ArrayList<>();
         list.add(new RNSpinkit(reactContext));
